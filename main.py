@@ -12,11 +12,12 @@ class RPG(Player):
     def historia(self):
         pass
     
-    def inputs(self,qual_pergunta):
-        #Perguntas a se fazer 
-        #1 -> batalha
-        #2 -> direcao a seguir
-        #3 -> acoes relacionada a mochila
+    def inputs(self,qual_pergunta:int):
+        """
+        Perguntas a se fazer 
+        1 -> batalha
+        2 -> direcao a seguir
+        3 -> acoes relacionada a mochila"""
     
         match qual_pergunta:
             case 1:
