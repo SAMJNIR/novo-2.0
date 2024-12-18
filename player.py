@@ -37,13 +37,15 @@ class Player:
             d20 = random.randint(0,20)
             tm.sleep(0.2)
             print(f"\r{d20}",end="")
+        print()
         return d20
             
-    def d8(self):
+    def D8(self):
         for x in range(6):
             d10 = random.randint(0,8)
             tm.sleep(0.2)
             print(f"\r{d10}",end="")
+        print()
         return d10
     
     def D6(self):
