@@ -43,18 +43,21 @@ class RPG(Player):
                 self.caminho = prompt(direcoes_Q)
             
             case 3:
-                action = [{
-                    "type":"confirm",
-                    "message":"Olhar itens mochila?",
-                    "name":"proceed",
-                    "default":True
-                },{
-                    "type":"list",
-                    "message":"Qual Item?",
-                    "name":"opcoes",
-                    "choices":self.mochila
-                }] 
-                self.acao = prompt(action)
+                if self.mochila:
+                    action = [{
+                        "type":"confirm",
+                        "message":"Olhar itens mochila?",
+                        "name":"proceed",
+                        "default":True
+                    },{
+                        "type":"list",
+                        "message":"Qual Item?",
+                        "name":"opcoes",
+                        "choices":self.mochila
+                    }] 
+                    self.acao = prompt(action)
+                else:
+                    print("Sua mochila esta vazia")
 
         
      
