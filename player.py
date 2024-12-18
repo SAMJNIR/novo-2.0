@@ -4,6 +4,7 @@ class Player:
     def __init__(self,nome, classe, level =1):
         self.nome = nome * level
         self.status = True
+        self.classe = classe
         self.vida = 100 * level
         self.max_peso = 50 * level
         self.item_na_mao = None
@@ -36,13 +37,53 @@ class Player:
             d20 = random.randint(0,20)
             tm.sleep(0.2)
             print(f"\r{d20}",end="")
-            print()
         return d20
             
-    def d10(self):
+    def d8(self):
         for x in range(6):
-            d10 = random.randint(0,10)
+            d10 = random.randint(0,8)
             tm.sleep(0.2)
             print(f"\r{d10}",end="")
-            print()
         return d10
+    
+    def D6(self):
+        self.D6 = ["""
+    +-------+
+    |       |
+    |   o   |
+    |       |
+    +-------+""",
+    """
+    +-------+
+    | o     |
+    |       |
+    |     o |
+    +-------+""",
+    """
+    +-------+
+    | o     |
+    |   o   |
+    |     o |
+    +-------+""",
+    """
+    +-------+
+    | o   o |
+    |       |
+    | o   o |
+    +-------+""",
+    """
+    +-------+
+    | o   o |
+    |   o   |
+    | o   o |
+    +-------+""",
+    """
+    +-------+
+    | o   o |
+    | o   o |
+    | o   o |
+    +-------+"""]
+        valor = random.randint(0,5)
+        print(self.D6[valor])
+        return  valor+1
+                
