@@ -1,10 +1,10 @@
 import random
 import time as tm
 class Player:
-    def __init__(self,nome, classe, level =1):
+    def __init__(self,nome,level =1):
         self.nome = nome * level
         self.status = True
-        self.classe = classe
+        self.classe = None
         self.vida = 100 * level
         self.max_peso = 50 * level
         self.item_na_mao = None

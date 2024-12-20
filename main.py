@@ -32,7 +32,7 @@ class RPG(Player):
                     "choices":["Voce vai morrer!","Pra que lutar?","vamos uma quebra de braco?"],
                     "when":lambda result: result["opcoes"] == "Falar com o inimigo"
                 }]
-                self.escolher_acao = prompt(batalha_Q)
+                return prompt(batalha_Q)
                 
             case 2:
                 direcoes_Q = [{
@@ -41,7 +41,7 @@ class RPG(Player):
                     "name":"opcoes",
                     "choices":["NORTE","SUL","LESTE","OESTE"]
                 }] 
-                self.caminho = prompt(direcoes_Q)
+                return prompt(direcoes_Q)
             
             case 3:
                 if self.mochila:
@@ -56,10 +56,17 @@ class RPG(Player):
                         "name":"opcoes",
                         "choices":self.mochila
                     }] 
-                    self.acao = prompt(action)
+                    return prompt(action)
                 else:
                     print("Sua mochila esta vazia")
-
+            case 4:
+                classes = [{
+                    "type":"list",
+                    "message":"Qual classe você escolherá?",
+                    "name":"opcoes",
+                    "choices":["Capoerista","Traficante","Barqueira","Pescador","Tocador de Forro","Rezadeira"]
+                }]
+                return prompt(classes)
         
      
     def itens(self): # Modificar
@@ -82,10 +89,8 @@ class RPG(Player):
                  
             
 def main():
-    rpg =RPG("Sandro", "guerreiro",1)
-    rpg.d20()
-    rpg.D8()
-    print(rpg.D6())
+    rpg =RPG("Sandro",1)
+    
     
 if __name__ == "__main__":    
     main()
