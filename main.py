@@ -80,13 +80,6 @@ class RPG(Player):
         elif res == "Fugir":
             pass
             
-            
-            
-                
-
-
-                 
-            
 def main():
     rpg =RPG(str(input("Qual o seu nome?")))
     
