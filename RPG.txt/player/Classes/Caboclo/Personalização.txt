@@ -1,0 +1,7 @@
+Personalização:
+
+Tribo: A qual tribo o caboclo pertence? Cada tribo pode ter suas próprias crenças, rituais e habilidades únicas.
+
+Espírito Animal: Qual animal é o guia espiritual do caboclo? Essa conexão pode influenciar suas habilidades e personalidade.
+
+Motivações: O que leva o caboclo a aventurar-se? Busca por conhecimento, proteção de sua tribo, vingança ou simplesmente a conexão com a natureza?

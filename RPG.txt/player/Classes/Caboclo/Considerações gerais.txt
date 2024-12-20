@@ -1,0 +1,12 @@
+Exemplo de Habilidade: Conhecimento da Floresta
+
+Nível 1: O caboclo pode encontrar água potável em uma floresta desconhecida com 85% de chance de sucesso.
+Nível 5: O caboclo pode identificar trilhas invisíveis a olhos não treinados e rastrear animais com 75% de chance de sucesso.
+Nível 10: O caboclo pode se comunicar com animais menores e entender suas intenções com 65% de chance de sucesso.
+
+
+
+Exemplo de Mecânica: Bênçãos da Natureza
+
+Ao realizar um ritual específico, o caboclo pode receber a bênção de um espírito da floresta, como a onça, ganhando um aumento temporário em sua força e agilidade.
+

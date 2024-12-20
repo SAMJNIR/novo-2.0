@@ -1,0 +1,11 @@
+Habilidades Únicas da Classe:
+
+Ginga: A base de todos os movimentos da capoeira, concedendo ao personagem agilidade, equilíbrio e a capacidade de desviar de ataques.
+
+Roda: A capoeira é praticada em roda, e essa habilidade permite ao capoeirista criar uma roda e convidar outros para uma disputa, podendo usar a música e a dança para influenciar o resultado.
+
+Malícia: A capacidade de usar o corpo como uma arma, empregando golpes e esquivas inesperados.
+
+Musicalidade: Permite ao capoeirista usar instrumentos musicais para acompanhar a luta e influenciar o ritmo da batalha.
+
+Acrobacia: Habilidade de realizar movimentos acrobáticos, como saltos e piruetas, para confundir os adversários e realizar ataques inesperados.

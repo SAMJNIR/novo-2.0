@@ -1,0 +1,7 @@
+Subclasses (Opcional):
+
+Mestre: Um capoeirista experiente, capaz de ensinar a arte a outros e liderar grupos.
+
+Angoleiro: Um praticante da capoeira angola, com um estilo mais lento e fluido, focado na dança e na musicalidade.
+
+Regional: Um praticante da capoeira regional, com um estilo mais rápido e intenso, focado na luta.

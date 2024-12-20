@@ -1,0 +1,4 @@
+Exemplo de Diálogo Inicial:
+
+Mensageiro: "Senhores, recebi uma mensagem urgente. A equipe de [nome da equipe] foi encontrada morta em uma caverna nas proximidades. As autoridades estão perplexas, e o mestre [nome do mestre] teme que algo sobrenatural esteja envolvido. Ele pede sua ajuda."
+Personagem: "Mas o que aconteceu? Alguém sabe como eles foram mortos?"

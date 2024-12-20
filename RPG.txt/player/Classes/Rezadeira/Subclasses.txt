@@ -1,0 +1,7 @@
+Subclasses (Opcional)
+
+Curandeira: Especializada em cura e em cuidar dos outros, com profundo conhecimento de plantas medicinais e orações de cura.
+
+Exorcista: Especializada em combater espíritos malignos e em realizar exorcismos.
+
+Vidente: Capaz de prever o futuro através de sonhos, visões e outros meios divinatórios.

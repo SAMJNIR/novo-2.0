@@ -1,0 +1,11 @@
+Habilidades Únicas da Classe:
+
+Conhecimento da Floresta: Permite ao caboclo se mover silenciosamente pela floresta, identificar trilhas, encontrar água e alimentos, e reconhecer plantas e animais.
+
+Medicina Natural: Permite ao caboclo criar poções e remédios a partir de plantas, curar ferimentos e aliviar doenças.
+
+Comunicação com Animais: Permite ao caboclo se comunicar e obter informações de animais da floresta.
+
+Rituais Espirituais: Permite ao caboclo realizar rituais para conectar-se com os espíritos da natureza, pedir proteção ou realizar outras ações sobrenaturais.
+
+Combate com Armas Naturais: Permite ao caboclo utilizar paus, pedras e outras armas naturais com eficiência.
