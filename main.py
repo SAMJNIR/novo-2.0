@@ -1,16 +1,11 @@
 from player import Player
-import random
 from enemy import Enemy
 from InquirerPy import prompt
 
 
 class RPG(Player):
-    def __init__(self,nome,classe,level):
-        super().__init__(nome,classe,level)
-
-    
-    def historia(self):
-        pass
+    def __init__(self,nome,level=1):
+        super().__init__(nome,level)
     
     def inputs(self,qual_pergunta:int):
         """
@@ -26,13 +21,14 @@ class RPG(Player):
                     "message":"Oque voce quer fazer?",
                     "name":"opcoes",
                     "choices":["Enfrentar","Fugir","Falar com o inimigo"]
-                },{"type":"list",
+                },
+                {"type":"list",
                     "message":"Oque voce fala pra ele",
-                    "name":"opcoes",
+                    "name":"fala",
                     "choices":["Voce vai morrer!","Pra que lutar?","vamos uma quebra de braco?"],
                     "when":lambda result: result["opcoes"] == "Falar com o inimigo"
                 }]
-                return prompt(batalha_Q)
+                return prompt(batalha_Q)["opcoes"]
                 
             case 2:
                 direcoes_Q = [{
@@ -41,7 +37,7 @@ class RPG(Player):
                     "name":"opcoes",
                     "choices":["NORTE","SUL","LESTE","OESTE"]
                 }] 
-                return prompt(direcoes_Q)
+                return prompt(direcoes_Q)["opcoes"]
             
             case 3:
                 if self.mochila:
@@ -56,7 +52,7 @@ class RPG(Player):
                         "name":"opcoes",
                         "choices":self.mochila
                     }] 
-                    return prompt(action)
+                    return prompt(action)["opcoes"]
                 else:
                     print("Sua mochila esta vazia")
             case 4:
@@ -64,33 +60,35 @@ class RPG(Player):
                     "type":"list",
                     "message":"Qual classe você escolherá?",
                     "name":"opcoes",
-                    "choices":["Capoerista","Traficante","Barqueira","Pescador","Tocador de Forro","Rezadeira"]
+                    "choices":["Capoerista","Traficante","Barqueira","Pescador","Tocador de Forro","Rezadeira","Caboclo"]
                 }]
-                return prompt(classes)
+                return prompt(classes)["opcoes"]
         
      
-    def itens(self): # Modificar
-        return random.choice([
-            ["Espada Curta","D10","W"],# W -> Weapons
-            ["Espada Longa","D10","W"],
-            ["Machado Curto","D10","W"],
-            ["Machado Grande","D10","W"],
-            ["Adaga","D10","W"],
-            ["Arco","D10","W"],
-            ["Massa","D10","W"],
-            ["Katana","D10","W"],
+    def batalha(self):
+        print("Você encontrou um Inimigo:")
+        if res := self.inputs(1) == "Enfrentar":
             
-            ["cura P","U"], #U -> UTILITARIOS
-            ["cura M","U"],
-            ["cura G","U"]
-            ])
+            print("Voce tirou:")
+            dadoPlayer = self.D6()
+            
+            print("O inimigo tirou:")
+            dadoInimigo = self.D6()
+            
+            print(dadoPlayer,dadoInimigo)
+            
+        elif res == "Fugir":
+            pass
+            
+            
+            
+                
 
 
                  
             
 def main():
-    rpg =RPG("Sandro",1)
-    
+    rpg =RPG(str(input("Qual o seu nome?")))
     
 if __name__ == "__main__":    
     main()

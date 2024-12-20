@@ -9,9 +9,7 @@ class Player:
         self.max_peso = 50 * level
         self.item_na_mao = None
         self.mochila = []
-        self.percepcao = random.randint(0,5)
         self.barraXP = []
-        self.nivel = level
     
     def verificar_peso(self,peso_item):
         if peso_item < self.max_peso:
@@ -39,17 +37,9 @@ class Player:
             print(f"\r{d20}",end="")
         print()
         return d20
-            
-    def D8(self):
-        for x in range(6):
-            d10 = random.randint(0,8)
-            tm.sleep(0.2)
-            print(f"\r{d10}",end="")
-        print()
-        return d10
     
     def D6(self):
-        self.D6 = ["""
+        D6 = ["""
     +-------+
     |       |
     |   o   |
@@ -86,6 +76,6 @@ class Player:
     | o   o |
     +-------+"""]
         valor = random.randint(0,5)
-        print(self.D6[valor])
+        print(D6[valor])
         return  valor+1
                 
