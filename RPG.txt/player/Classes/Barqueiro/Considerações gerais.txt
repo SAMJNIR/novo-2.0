@@ -1,0 +1,10 @@
+Nível 1: O barqueiro pode determinar a direção correta em um mapa náutico com 85% de chance de sucesso.
+
+Nível 5: O barqueiro pode navegar em condições climáticas adversas, como neblina ou tempestade, com 75% de chance de sucesso.
+
+Nível 10: O barqueiro pode sentir as correntes marítimas e prever tempestades com 65% de chance de sucesso.
+Exemplo de Mecânica: Combate Marítimo
+
+Os personagens em um navio rolam um teste de Destreza para evitar serem atingidos por projéteis inimigos.
+O vento e as ondas podem afetar a precisão dos ataques e a capacidade de manobrar a embarcação.
+Um navio pode ser abordado por inimigos, resultando em um combate corpo a corpo a bordo.

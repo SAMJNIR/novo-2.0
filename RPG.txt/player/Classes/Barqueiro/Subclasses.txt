@@ -1,0 +1,7 @@
+Subclasses (Opcional)
+
+Corsário: Um barqueiro que se dedica à pirataria, com habilidades em combate e furtividade.
+
+Pescador: Especialista em pesca, com conhecimento sobre os hábitos dos peixes e habilidades para preparar o pescado.
+
+Explorador Marítimo: Um aventureiro que busca descobrir novas terras e tesouros escondidos no mar.
