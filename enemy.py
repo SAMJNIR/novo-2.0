@@ -16,3 +16,5 @@ class Enemy:
             return self.dropXp
         else:
             self.vida -= dano
+            
+    

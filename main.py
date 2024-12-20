@@ -83,7 +83,9 @@ class RPG(Player):
             
 def main():
     rpg =RPG("Sandro", "guerreiro",1)
-    rpg.inputs(3)
+    rpg.d20()
+    rpg.D8()
+    print(rpg.D6())
     
 if __name__ == "__main__":    
     main()
