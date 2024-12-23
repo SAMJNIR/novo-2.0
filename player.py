@@ -2,12 +2,12 @@ import random
 import time as tm
 
 class Player:
-    def __init__(self,nome,level =1):
+    def __init__(self,nome):
         self.nome = nome 
         self.classe = None
         self.status = True
-        
-        self.atributo = {
+        self.level = 1
+        self.atributo:dict[str:int] = {
             "Const": None,
             "For": None,
             "Dex": None,
@@ -16,7 +16,7 @@ class Player:
         }
         
         self.habilidades_possiveis:list[str] = []
-        self.level = 1
+        
         self.mochila = []
     
     def dano_tomado(self,dano):

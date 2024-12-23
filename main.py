@@ -3,8 +3,8 @@ from InquirerPy import prompt
 from enemy import InimigoComum, SubBoss, Boss
 
 class RPG(Player):
-    def __init__(self,nome,level=1):
-        super().__init__(nome,level)
+    def __init__(self,nome):
+        super().__init__(nome)
     
     def inputs(self,qual_pergunta:int) :
         """
@@ -77,7 +77,6 @@ class RPG(Player):
 def main():
     rpg =RPG(str(input("Qual o seu nome novato? ")))
     rpg.classes(rpg.inputs("classes"))
-    rpg.inputs("habilidades")
     
     
 if __name__ == "__main__":    
