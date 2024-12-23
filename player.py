@@ -38,6 +38,14 @@ class Player:
         print()
         return d20
     
+    
+    #["Capoerista","Traficante","Barqueira","Pescador","Tocador de Forro","Rezadeira","Caboclo"]
+    
+    def classes(self,escolha):
+        match escolha:
+            case "Capoerista":
+                self.vida = None
+                
     def D6(self):
         D6 = ["""
     +-------+
