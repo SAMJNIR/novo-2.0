@@ -1,21 +1,23 @@
 import random
 import time as tm
+
 class Player:
     def __init__(self,nome,level =1):
-        self.nome = nome * level
-        self.status = True
+        self.nome = nome 
         self.classe = None
-        self.vida = 100 * level
-        self.max_peso = 50 * level
-        self.item_na_mao = None
+        self.status = True
+        
+        self.atributo = {
+            "Const": None,
+            "For": None,
+            "Dex": None,
+            "Car": None,
+            "Sab": None
+        }
+        
+        self.habilidades_possiveis:list[str] = []
+        self.level = 1
         self.mochila = []
-        self.barraXP = []
-    
-    def verificar_peso(self,peso_item):
-        if peso_item < self.max_peso:
-            self.max_peso -= peso_item
-        else:
-            print("Nao e possivel carregar esse item")
     
     def dano_tomado(self,dano):
         if dano <= self.vida:
@@ -29,30 +31,80 @@ class Player:
     def pegar_item(self,item):
         if len(item) == 2:
             self.objeto, self.peso_item = item
-            
-    def d20(self):
-        for x in range(6):
-            d20 = random.randint(0,20)
-            tm.sleep(0.2)
-            print(f"\r{d20}",end="")
-        print()
-        return d20
     
     
-    #["Capoerista","Traficante","Barqueira","Pescador","Tocador de Forro","Rezadeira","Caboclo"]
+    #["Capoerista","Contrabandista","Pistoleiro","Rezadeira","Tocador de Forro","Barqueiro"]
     
-    def classes(self,escolha):
-        match escolha:
+    def classes(self,escolha_de_classe):
+        
+        match escolha_de_classe:
             case "Capoerista":
-                self.vida = None
+                self.atributo["Const"] = 0
+                self.atributo["For"] = 0
+                self.atributo["Dex"] = 0
+                self.atributo["Car"] = 0
+                self.atributo["Sab"] = 1
+                self.habilidades_possiveis = ["Ginga", "Roda", "Malícia", "Musicalidade", "Acrobacia"]
                 
+            case "Contrabandista":
+                self.atributo["Const"] = 0
+                self.atributo["For"] = 0
+                self.atributo["Dex"] = 0
+                self.atributo["Car"] = 0
+                self.atributo["Sab"] = 1
+                self.habilidades_possiveis = ["Furtividade", "Negociação", "Conhecimento", "Disfarce", " Sobrevivência"]
+                
+            case "Pistoleiro":
+                self.atributo["Const"] = 0
+                self.atributo["For"] = 0
+                self.atributo["Dex"] = 0
+                self.atributo["Car"] = 0
+                self.atributo["Sab"] = 1
+                self.habilidades_possiveis = ["Músico", "Dança", "Compositor", "Persuasão", "Sobrevivência"]
+                
+            case "Rezadeira":
+                self.atributo["Const"] = 0
+                self.atributo["For"] = 0
+                self.atributo["Dex"] = 0
+                self.atributo["Car"] = 0
+                self.atributo["Sab"] = 1
+                self.habilidades_possiveis = ["Orações","Conhecimento de Ervas", "Rituais", "Persuasão", "Proteção Espiritual"]
+            
+            case "Tocador de Forro":
+                self.atributo["Const"] = 0
+                self.atributo["For"] = 0
+                self.atributo["Dex"] = 0
+                self.atributo["Car"] = 0
+                self.atributo["Sab"] = 1
+                self.habilidades_possiveis = ["Músico", "Dança", "Compositor", "Persuasão", "Sobrevivência"]
+                
+            case "Barqueiro":
+                self.atributo["Const"] = 0
+                self.atributo["For"] = 0
+                self.atributo["Dex"] = 0
+                self.atributo["Car"] = 0
+                self.atributo["Sab"] = 1
+                self.habilidades_possiveis = ["Navegação", "Natação", "Reparo de Embarcações", "Luta com Armas Improvisadas"]
+                
+            case "Caboclo":
+                self.atributo["Const"] = 0
+                self.atributo["For"] = 0
+                self.atributo["Dex"] = 0
+                self.atributo["Car"] = 0
+                self.atributo["Sab"] = 1
+                self.habilidades_possiveis = ["Conhecimento da Floresta", "Medicina Natural", "Comunicação com Animais", "Rituais Espirituais", "Combate com Armas Naturais"]    
+        
+        print("-"*20)
+        print(f"Sua Constituicao: {self.atributo["Const"]}\nSua Forca: {self.atributo["For"]}\nSua Destreza: {self.atributo["Dex"]}\nSeu Carisma: {self.atributo["Car"]}\nSua Sabedoria: {self.atributo["Sab"]}")
+        print("-"*20)
+        
     def D6(self):
         D6 = ["""
     +-------+
     |       |
     |   o   |
     |       |
-    +-------+""",
+    +-------+""", 
     """
     +-------+
     | o     |
@@ -86,4 +138,11 @@ class Player:
         valor = random.randint(0,5)
         print(D6[valor])
         return  valor+1
-                
+    
+    def d20(self):
+        for x in range(6):
+            d20 = random.randint(0,20)
+            tm.sleep(0.2)
+            print(f"\r{d20}",end="")
+        print()
+        return d20
