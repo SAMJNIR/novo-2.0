@@ -1,51 +1,47 @@
 from player import Player
-import random
-from enemy import Enemy
 from InquirerPy import prompt
-
+from enemy import InimigoComum, SubBoss, Boss
 
 class RPG(Player):
-    def __init__(self,nome,classe,level):
-        super().__init__(nome,classe,level)
-
+    def __init__(self,nome):
+        super().__init__(nome)
     
-    def historia(self):
-        pass
-    
-    def inputs(self,qual_pergunta:int):
+    def inputs(self,qual_pergunta:int) :
         """
-        Perguntas a se fazer 
+        Qual tipo de entrada escolher:
         1 -> batalha
         2 -> direcao a seguir
-        3 -> acoes relacionada a mochila"""
-    
+        3 -> acoes relacionada a mochila
+        4 -> classes
+        5 -> habilidades
+        """
+        
         match qual_pergunta:
             case 1:
-                batalha_Q = [{
+                return prompt([{
                     "type":"list",
                     "message":"Oque voce quer fazer?",
                     "name":"opcoes",
                     "choices":["Enfrentar","Fugir","Falar com o inimigo"]
-                },{"type":"list",
+                },
+                {"type":"list",
                     "message":"Oque voce fala pra ele",
-                    "name":"opcoes",
+                    "name":"fala",
                     "choices":["Voce vai morrer!","Pra que lutar?","vamos uma quebra de braco?"],
                     "when":lambda result: result["opcoes"] == "Falar com o inimigo"
-                }]
-                return prompt(batalha_Q)
+                }])["opcoes"]
                 
-            case 2:
-                direcoes_Q = [{
+            case "direcao":
+                return prompt([{
                     "type":"list",
                     "message":"Qual caminho tomar?",
                     "name":"opcoes",
                     "choices":["NORTE","SUL","LESTE","OESTE"]
-                }] 
-                return prompt(direcoes_Q)
+                }])["opcoes"]
             
-            case 3:
+            case "inventario":
                 if self.mochila:
-                    action = [{
+                    return prompt([{
                         "type":"confirm",
                         "message":"Olhar itens mochila?",
                         "name":"proceed",
@@ -55,41 +51,32 @@ class RPG(Player):
                         "message":"Qual Item?",
                         "name":"opcoes",
                         "choices":self.mochila
-                    }] 
-                    return prompt(action)
+                    }])["opcoes"]
                 else:
                     print("Sua mochila esta vazia")
-            case 4:
-                classes = [{
+                    
+            case "classes":
+                return prompt([{
                     "type":"list",
                     "message":"Qual classe você escolherá?",
                     "name":"opcoes",
-                    "choices":["Capoerista","Traficante","Barqueira","Pescador","Tocador de Forro","Rezadeira"]
-                }]
-                return prompt(classes)
-        
-     
-    def itens(self): # Modificar
-        return random.choice([
-            ["Espada Curta","D10","W"],# W -> Weapons
-            ["Espada Longa","D10","W"],
-            ["Machado Curto","D10","W"],
-            ["Machado Grande","D10","W"],
-            ["Adaga","D10","W"],
-            ["Arco","D10","W"],
-            ["Massa","D10","W"],
-            ["Katana","D10","W"],
+                    "choices": ["Capoerista","Contrabandista","Pistoleiro","Rezadeira","Tocador de Forro","Barqueiro"]
+
+                }])["opcoes"]
             
-            ["cura P","U"], #U -> UTILITARIOS
-            ["cura M","U"],
-            ["cura G","U"]
-            ])
-
-
-                 
+            case "habilidades":
+                return prompt([{
+                    "type":"list",
+                    "message":"Habilidades",
+                    "name":"opcoes",
+                    "choices": self.habilidades_possiveis
+                }])["opcoes"]
+        
+    
             
 def main():
-    rpg =RPG("Sandro",1)
+    rpg =RPG(str(input("Qual o seu nome novato? ")))
+    rpg.classes(rpg.inputs("classes"))
     
     
 if __name__ == "__main__":    
