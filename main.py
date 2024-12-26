@@ -70,6 +70,9 @@ class RPG(Player):
                     "name":"opcoes",
                     "choices": self.habilidades_possiveis
                 }])["opcoes"]
+                
+    def batalha(self):
+        pass
         
         
     
