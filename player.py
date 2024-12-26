@@ -39,65 +39,107 @@ class Player:
         
         match escolha_de_classe:
             case "Capoerista":
+                #Atributos
                 self.atributo["Const"] = 0
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
                 self.atributo["Sab"] = 1
+                #habilidades
                 self.habilidades_possiveis = ["Ginga", "Roda", "Malícia", "Musicalidade", "Acrobacia"]
                 
+                #itens iniciais
+                for item in ["Cura simples",{"Gold":10},"Berimbau"]:
+                    self.mochila.append(item)
+                
             case "Contrabandista":
+                #Atributos
                 self.atributo["Const"] = 0
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
                 self.atributo["Sab"] = 1
+                #habilidades
                 self.habilidades_possiveis = ["Furtividade", "Negociação", "Conhecimento", "Disfarce", " Sobrevivência"]
                 
+                #itens iniciais
+                for item in ["Cura simples",{"Gold":10},""]:
+                    self.mochila.append(item)
+                    
             case "Pistoleiro":
+                #Atributos
                 self.atributo["Const"] = 0
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
                 self.atributo["Sab"] = 1
+                #habilidades
                 self.habilidades_possiveis = ["Músico", "Dança", "Compositor", "Persuasão", "Sobrevivência"]
                 
+                #itens iniciais
+                for item in ["Cura simples",{"Gold":10},""]:
+                    self.mochila.append(item)
+                    
             case "Rezadeira":
+                #Atributos
                 self.atributo["Const"] = 0
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
                 self.atributo["Sab"] = 1
+                #habilidades
                 self.habilidades_possiveis = ["Orações","Conhecimento de Ervas", "Rituais", "Persuasão", "Proteção Espiritual"]
-            
+                
+                #itens iniciais
+                for item in ["Cura simples",{"Gold":10},"Terço"]:
+                    self.mochila.append(item)
+                    
             case "Tocador de Forro":
+                #Atributos
                 self.atributo["Const"] = 0
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
                 self.atributo["Sab"] = 1
+                #habilidades
                 self.habilidades_possiveis = ["Músico", "Dança", "Compositor", "Persuasão", "Sobrevivência"]
                 
+                #itens iniciais
+                for item in ["Cura simples",{"Gold":10},"Safona"]:
+                    self.mochila.append(item)
+                    
             case "Barqueiro":
+                #Atributos
                 self.atributo["Const"] = 0
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
                 self.atributo["Sab"] = 1
+                #habilidades
                 self.habilidades_possiveis = ["Navegação", "Natação", "Reparo de Embarcações", "Luta com Armas Improvisadas"]
                 
+                #itens iniciais
+                for item in ["Cura simples", {"Gold":10}, "Remo", "Rede de Pesca", "Bússola","Mapa Náutico","Kit de reparo"]:
+                    self.mochila.append(item)
+                    
             case "Caboclo":
+                #Atributos
                 self.atributo["Const"] = 0
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
                 self.atributo["Sab"] = 1
+                #habilidades
                 self.habilidades_possiveis = ["Conhecimento da Floresta", "Medicina Natural", "Comunicação com Animais", "Rituais Espirituais", "Combate com Armas Naturais"]    
-        
+                
+                #itens iniciais
+                for item in [{"Gold":10},"Arco",{"Flecha":20},"Facão","Kit de Sobrevivência","Amuletos e Talismãs","Venenos Naturais"]:
+                    self.mochila.append(item)
+
         print("-"*20)
         print(f"Sua Constituicao: {self.atributo["Const"]}\nSua Forca: {self.atributo["For"]}\nSua Destreza: {self.atributo["Dex"]}\nSeu Carisma: {self.atributo["Car"]}\nSua Sabedoria: {self.atributo["Sab"]}")
         print("-"*20)
-        
+         
     def D6(self):
         D6 = ["""
     +-------+
