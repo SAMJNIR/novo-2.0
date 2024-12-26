@@ -17,7 +17,7 @@ class RPG(Player):
         """
         
         match qual_pergunta:
-            case 1:
+            case "batalha":
                 return prompt([{
                     "type":"list",
                     "message":"Oque voce quer fazer?",
@@ -61,7 +61,6 @@ class RPG(Player):
                     "message":"Qual classe você escolherá?",
                     "name":"opcoes",
                     "choices": ["Capoerista","Contrabandista","Pistoleiro","Rezadeira","Tocador de Forro","Barqueiro"]
-
                 }])["opcoes"]
             
             case "habilidades":
@@ -72,12 +71,14 @@ class RPG(Player):
                     "choices": self.habilidades_possiveis
                 }])["opcoes"]
         
+        
     
             
 def main():
     rpg =RPG(str(input("Qual o seu nome novato? ")))
     rpg.classes(rpg.inputs("classes"))
+    print(*rpg.mochila,sep=" - ")
     
     
-if __name__ == "__main__":    
+if __name__ == "__main__":
     main()
