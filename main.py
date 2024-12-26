@@ -20,9 +20,9 @@ class RPG(Player):
             case "batalha":
                 return prompt([{
                     "type":"list",
-                    "message":"Oque voce quer fazer?",
+                    "message":"Qual sua Acao?",
                     "name":"opcoes",
-                    "choices":["Enfrentar","Fugir","Falar com o inimigo"]
+                    "choices":["Jogar Dado","Fugir","Falar com o inimigo"]
                 },
                 {"type":"list",
                     "message":"Oque voce fala pra ele",
@@ -70,9 +70,32 @@ class RPG(Player):
                     "name":"opcoes",
                     "choices": self.habilidades_possiveis
                 }])["opcoes"]
-                
+    def GameOver(self):
+        print("Voce morreu")
+        
+    def battle(self,Roll_player:int,Roll_inimigo:int,inimigo:object):
+            while inimigo.status:    
+                dano_player = self.d20()
+                dano_inimigo = inimigo.rolar_dano()
+                if Roll_player > Roll_inimigo:
+                    inimigo.vida -= dano_player
+                    if inimigo.vida <= 0:
+                        inimigo.status = False
+                        self.xpDrop += inimigo.dropXp
+                else:
+                    self.atributo["Const"] -= dano_inimigo
+                    if self.atributo["Const"] <= 0:
+                        self.status = False
+                        self.GameOver()
+                        break
     def batalha(self):
-        pass
+        res = self.inputs("batalha")
+        inimigo = InimigoComum(self.level)
+        if res == "Jogar Dado":
+            dado_player = self.D6()
+            dado_inimigo = self.D6()
+            self.battle(dado_player,dado_inimigo,inimigo)
+
         
         
     
@@ -81,7 +104,7 @@ def main():
     rpg =RPG(str(input("Qual o seu nome novato? ")))
     rpg.classes(rpg.inputs("classes"))
     print(*rpg.mochila,sep=" - ")
-    
+    rpg.batalha()
     
 if __name__ == "__main__":
     main()

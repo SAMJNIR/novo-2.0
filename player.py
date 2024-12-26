@@ -7,6 +7,7 @@ class Player:
         self.classe = None
         self.status = True
         self.level = 1
+        self.xpDrop = 0
         self.atributo:dict[str:int] = {
             "Const": None,
             "For": None,
@@ -18,22 +19,12 @@ class Player:
         self.habilidades_possiveis:list[str] = []
         
         self.mochila = []
-    
-    def dano_tomado(self,dano):
-        if dano <= self.vida:
-            self.vida -= dano
-        
-        elif self.vida == 0:
-            self.status = False
-            
-            
-                        
+
+                                    
     def pegar_item(self,item):
         if len(item) == 2:
             self.objeto, self.peso_item = item
     
-    
-    #["Capoerista","Contrabandista","Pistoleiro","Rezadeira","Tocador de Forro","Barqueiro"]
     
     def classes(self,escolha_de_classe):
         
@@ -41,7 +32,7 @@ class Player:
             case "Capoerista":
                 
                 #Atributos
-                self.atributo["Const"] = 0
+                self.atributo["Const"] = 10
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
@@ -55,7 +46,7 @@ class Player:
             case "Contrabandista":
                 
                 #Atributos
-                self.atributo["Const"] = 0
+                self.atributo["Const"] = 10
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
@@ -69,7 +60,7 @@ class Player:
             case "Pistoleiro":
                 
                 #Atributos
-                self.atributo["Const"] = 0
+                self.atributo["Const"] = 10
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
@@ -83,7 +74,7 @@ class Player:
             case "Rezadeira":
                 
                 #Atributos
-                self.atributo["Const"] = 0
+                self.atributo["Const"] = 10
                 self.atributo["For"] = 0 
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
@@ -97,7 +88,7 @@ class Player:
             case "Tocador de Forro":
                 
                 #Atributos
-                self.atributo["Const"] = 0
+                self.atributo["Const"] = 10
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
@@ -110,7 +101,7 @@ class Player:
                     
             case "Barqueiro":
                 #Atributos
-                self.atributo["Const"] = 0
+                self.atributo["Const"] = 10
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
@@ -124,7 +115,7 @@ class Player:
                     
             case "Caboclo":
                 #Atributos
-                self.atributo["Const"] = 0
+                self.atributo["Const"] = 10
                 self.atributo["For"] = 0
                 self.atributo["Dex"] = 0
                 self.atributo["Car"] = 0
@@ -182,8 +173,8 @@ class Player:
     
     def d20(self):
         for x in range(6):
-            d20 = random.randint(0,20)
+            Dvinte = random.randint(0,20)
             tm.sleep(0.2)
-            print(f"\r{d20}",end="")
+            print(f"\r{Dvinte}",end="")
         print()
-        return d20
+        return Dvinte

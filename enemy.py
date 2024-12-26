@@ -11,12 +11,6 @@ class InimigoComum:
         d10 = random.randint(0,10)
         return d10
     
-    def dano_tomado(self,dano):
-        if dano >= self.vida and self.vida == 0:
-            self.status = "MORTO"
-            return self.dropXp
-        else:
-            self.vida -= dano
             
 class SubBoss:
     def __init__(self):
