@@ -1,0 +1,9 @@
+Exemplo de Habilidade: Música como Arma
+
+Nível 1: O tocador de forró pode usar sua música para distrair um oponente por um turno.
+Nível 5: O tocador de forró pode criar uma barreira sonora que impede os inimigos de se aproximarem.
+Nível 10: O tocador de forró pode usar sua música para curar ferimentos leves em si mesmo e em seus aliados.
+
+Exemplo de Mecânica: Roda de Forró
+
+Em uma roda de forró, os personagens se enfrentam em um duelo musical e físico. A música pode ser usada para aumentar a agilidade, a força ou a defesa dos personagens, além de causar danos aos inimigos. 

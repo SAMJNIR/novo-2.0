@@ -1,0 +1,13 @@
+Equipamento
+
+Embarcação: A ferramenta de trabalho do barqueiro. Pode ser um barco pequeno, uma canoa, um veleiro ou até mesmo um navio maior, dependendo da campanha.
+
+Remo: Arma básica e ferramenta de trabalho.
+
+Rede de pesca: Util para pescar e também como arma improvisada.
+
+Bússola: Essencial para navegação em alto mar.
+
+Mapa náutico: Contém informações sobre rotas marítimas, perigos e pontos de interesse.
+
+Kit de reparo: Contém ferramentas e materiais para consertar a embarcação.

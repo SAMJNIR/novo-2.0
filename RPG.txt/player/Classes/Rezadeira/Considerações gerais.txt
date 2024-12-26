@@ -1,0 +1,11 @@
+Exemplo de Habilidade: Orações de Cura
+
+Nível 1: A rezadeira pode curar ferimentos leves com uma oração simples.
+Nível 5: A rezadeira pode curar ferimentos graves e remover doenças com uma oração mais complexa.
+Nível 10: A rezadeira pode ressuscitar um morto, mas com um custo pessoal em sua energia espiritual.
+
+
+Exemplo de Mecânica: Energia Espiritual
+
+A rezadeira possui um pool de pontos de energia espiritual que são gastos para realizar rituais e orações. Esses pontos se recuperam lentamente com o tempo ou através de meditação.
+

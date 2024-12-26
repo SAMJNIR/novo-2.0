@@ -1,0 +1,7 @@
+Subclasses (Opcional):
+
+Xamã: Um caboclo com profundo conhecimento dos rituais espirituais e da comunicação com os espíritos.
+
+Caçador: Um expert em caça e sobrevivência na floresta, com habilidades aprimoradas para rastrear e abater animais.
+
+Herbalista: Um especialista em plantas medicinais, capaz de criar poções e remédios poderosos.

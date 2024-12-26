@@ -1,0 +1,11 @@
+Exemplo de Habilidade: Roda
+
+Nível 1: O capoeirista pode iniciar uma roda de capoeira e convidar outros personagens para participar.
+Nível 5: O capoeirista pode usar a música para influenciar o ritmo da roda, tornando-a mais rápida ou mais lenta.
+Nível 10: O capoeirista pode usar a roda para manipular os outros personagens, distraindo-os ou incitando-os à luta.
+
+
+Exemplo de Mecânica: Musicalidade
+
+Ao tocar um instrumento musical, o capoeirista pode conceder um bônus de +1 em testes de Destreza para seus aliados ou um penalizador de -1 para seus inimigos.
+

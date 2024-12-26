@@ -1,0 +1,7 @@
+Mecânicas Específicas:
+
+Roda de Capoeira: Um sistema de combate único, onde os personagens se enfrentam em uma roda, usando a música e a dança para influenciar o resultado.
+
+Musicalidade: A música pode afetar o desempenho dos personagens, concedendo bônus ou penalidades em determinadas ações.
+
+Acrobacia: Regras específicas para realizar movimentos acrobáticos, como saltos e piruetas, para atacar ou defender.

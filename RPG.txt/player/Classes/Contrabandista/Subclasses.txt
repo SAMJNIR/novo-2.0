@@ -1,0 +1,7 @@
+Subclasses (Opcional)
+
+Espião: Especializado em obter informações secretas e infiltrar-se em organizações inimigas.
+
+Ladrão: Habilidoso em roubos e furtos, capaz de entrar e sair de locais sem ser detectado.
+
+Mestre de Disfarces: Um especialista em criar novas identidades e enganar qualquer um.

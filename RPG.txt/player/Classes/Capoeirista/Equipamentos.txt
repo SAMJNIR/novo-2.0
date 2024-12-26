@@ -1,0 +1,9 @@
+Equipamentos:
+
+Berimbau: O instrumento musical mais associado à capoeira, utilizado para marcar o ritmo da luta e criar um ambiente de jogo.
+
+Atabaque: Outro instrumento de percussão, que pode ser usado para intensificar o ritmo da batalha.
+
+Pandeiro: Um instrumento de percussão menor, que pode ser usado para criar variações rítmicas.
+
+Cordão: Um acessório tradicional da capoeira, que pode ser usado como arma improvisada.

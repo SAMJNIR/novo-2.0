@@ -1,0 +1,9 @@
+Exemplo de Habilidade: Disfarce
+
+Nível 1: O contrabandista pode alterar sua aparência levemente para passar despercebido.
+Nível 5: O contrabandista pode assumir a identidade de outra pessoa por um curto período de tempo.
+Nível 10: O contrabandista pode criar uma identidade falsa completa, incluindo documentos e histórias de vida.
+
+Exemplo de Mecânica: Rede de Contatos
+
+O contrabandista pode gastar pontos de ação para consultar sua rede de contatos e obter informações sobre locais, pessoas ou eventos.

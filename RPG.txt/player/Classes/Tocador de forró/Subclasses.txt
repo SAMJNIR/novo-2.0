@@ -1,0 +1,7 @@
+Subclasses (Opcional)
+
+Mestre de Baião: Especializado no baião, um ritmo mais acelerado e enérgico do forró, ideal para animar festas e batalhas.
+
+Cantador: Um tocador de forró com grande habilidade para compor e cantar músicas, capaz de contar histórias e emocionar o público com suas canções.
+
+Mestre de Roda: Um líder nato, capaz de organizar e animar grandes rodas de forró, unindo pessoas e criando um ambiente de festa.

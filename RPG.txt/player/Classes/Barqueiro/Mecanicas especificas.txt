@@ -1,0 +1,7 @@
+Mecânicas Específicas
+
+Combate Marítimo: Regras específicas para combates em embarcações, levando em consideração o movimento das ondas, o vento e a distância entre os navios.
+
+Tempestades: Eventos aleatórios que podem afetar a navegação e causar danos à embarcação.
+
+Tesouros Submarinos: Possibilidade de encontrar tesouros afundados ou criaturas míticas nas profundezas do mar.

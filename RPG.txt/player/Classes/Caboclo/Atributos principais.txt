@@ -1,0 +1,9 @@
+Atributos Principais:
+
+Destreza: Essencial para a agilidade em movimento pela floresta, para a utilização de armas brancas e para a realização de tarefas delicadas como a confecção de venenos ou a coleta de ervas.
+
+Constituição: Garante resistência a longas jornadas, à fome, à sede e a condições climáticas adversas da natureza.
+
+Sabedoria: Permite ao caboclo compreender a natureza, comunicar-se com animais, identificar plantas medicinais e realizar rituais espirituais.
+
+Carisma: Essencial para a comunicação com espíritos da natureza, para a liderança de grupos e para a persuasão de outros.
