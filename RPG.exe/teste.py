@@ -1,5 +1,19 @@
-from main import RPG
+from InquirerPy import prompt
 
-rpg =RPG("Sandro",1)
-rpg.batalha()
+def Habilidades():
 
+ questões = [{ 
+  
+    "type":"list",
+    "message":"Suas habilidades",
+    "name":"habilidades",
+    "choices": habilidades
+
+              }]
+ 
+ resposta = prompt(questões)
+ resposta = questões["habilidades"]
+
+ habilidades = "soco", 'chute', 'esquiva' #exemplo de habilidades iniciais
+
+ return resposta
